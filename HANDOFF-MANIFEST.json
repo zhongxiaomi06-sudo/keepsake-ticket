@@ -88,6 +88,11 @@
       "sha256": "fc343a8fca685d0bb3fb6bf4ac28374822504eb1f321f171b5a495612615dbd7"
     },
     {
+      "path": "apps/keepsake-ticket/tests/e2e/project.spec.ts",
+      "bytes": 515,
+      "sha256": "1df3dcdcd943d5e1259edcc00aa704f544f2e270ad9d087c49cdee93bba40cbd"
+    },
+    {
       "path": "config/eazo-sdk-browser-shims.ts",
       "bytes": 1768,
       "sha256": "b137815f6ba411790bc3aa1e28508e31cdad86f4e6bb443925fcedb92f1c4cd0"
@@ -289,8 +294,8 @@
     },
     {
       "path": "pnpm-lock.yaml",
-      "bytes": 90586,
-      "sha256": "81aff718f0261a4244eae975336d7cb68253b822f67cd92db672db16a5f437a1"
+      "bytes": 90717,
+      "sha256": "9acbef45f66edeb25bec3dcd247ba7eba24bae2a6f155928ff0cb7264e9f2b0e"
     },
     {
       "path": "pnpm-workspace.yaml",

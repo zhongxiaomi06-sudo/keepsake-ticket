@@ -119,6 +119,12 @@ importers:
         specifier: 'catalog:'
         version: 8.2.2(@types/node@24.10.1)
 
+  apps/keepsake-ticket:
+    devDependencies:
+      vite:
+        specifier: 'catalog:'
+        version: 8.2.2(@types/node@26.4.1)
+
   apps/life-elsewhere-now:
     dependencies:
       '@eazo/contracts':
