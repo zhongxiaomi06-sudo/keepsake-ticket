@@ -14,8 +14,18 @@
     },
     {
       "path": "apps/keepsake-ticket/ARCHITECTURE.md",
-      "bytes": 570,
-      "sha256": "4d2c330ffde0b5b8b5b7a0faa16eeb3070555741180c45bcf31bc17ee73266d2"
+      "bytes": 1141,
+      "sha256": "080546574d4a60aed0ccc06ab7a2adc6c81039ba7c48be46328499f718bcf16f"
+    },
+    {
+      "path": "apps/keepsake-ticket/content/data-manifest.json",
+      "bytes": 957,
+      "sha256": "fec3502c6f6d76a2bdf2394fe83fd092d7086e810057aaf4c0bf9322aa2e0348"
+    },
+    {
+      "path": "apps/keepsake-ticket/content/rights-ledger.tsv",
+      "bytes": 360,
+      "sha256": "f8473b23bc753f17398aba0ee8f67240b32b50fd475fb598ee7b517bcbbaec06"
     },
     {
       "path": "apps/keepsake-ticket/content/sample-journey.png",
@@ -29,13 +39,13 @@
     },
     {
       "path": "apps/keepsake-ticket/CONTENT.md",
-      "bytes": 510,
-      "sha256": "5b510417dc80dd50ed93f45afc1823d65c9e01ba0c99261221ed78a28cfafff5"
+      "bytes": 918,
+      "sha256": "c90fc2e9d252a420c332aec948d7ee594865dbae82efb6f91a7af6fd74ab144e"
     },
     {
       "path": "apps/keepsake-ticket/DESIGN.md",
-      "bytes": 1061,
-      "sha256": "97251f783852163b9ce26115b64f6395bca363f8247e6720fdf4af6d1b9ef32f"
+      "bytes": 1309,
+      "sha256": "7e35ae0f40ee3da3b8ee99246149ae91ce639dc925d57827c0589a92f2bfb595"
     },
     {
       "path": "apps/keepsake-ticket/index.html",
@@ -49,18 +59,18 @@
     },
     {
       "path": "apps/keepsake-ticket/PRODUCT.md",
-      "bytes": 958,
-      "sha256": "c55c93b66eea8af2e9b671228bd3057920ec2d179322d66dbcac193792e7a30a"
+      "bytes": 1251,
+      "sha256": "fc3e6b46e6d9dc0d508315b39734d7404cc1718c965fd0cd1d9d0391e0ec7a9c"
     },
     {
       "path": "apps/keepsake-ticket/README.md",
-      "bytes": 583,
-      "sha256": "2dba32dfde01562f236274eae77dbf7f2c6e33750a6a20edd9d4a815dd217ec4"
+      "bytes": 625,
+      "sha256": "6b16753179b51b6812c8bd26ee24967d4eb0ce3970043998bb32b82afd38545e"
     },
     {
       "path": "apps/keepsake-ticket/RELEASE.md",
-      "bytes": 455,
-      "sha256": "c794ec491b1518dc8eb44ef9f77781a8e1828596e74eaffccefa8e34ab36e1c4"
+      "bytes": 600,
+      "sha256": "1e10e134d2471dfa649a8c8e605f8398d757c7465151259f6efb2822b29c7a61"
     },
     {
       "path": "apps/keepsake-ticket/src/main.js",
@@ -74,13 +84,8 @@
     },
     {
       "path": "apps/keepsake-ticket/TESTING.md",
-      "bytes": 572,
-      "sha256": "b4beb3b8d601b2a0d647fad26769781f5209d3211b89d42531dcc44b6a2981ae"
-    },
-    {
-      "path": "apps/keepsake-ticket/tests/e2e/project.spec.ts",
-      "bytes": 571,
-      "sha256": "c16cd63a1535d542b931437e037ccbcc09286fae731c5e7f0c4e4e970368bfcc"
+      "bytes": 934,
+      "sha256": "fc343a8fca685d0bb3fb6bf4ac28374822504eb1f321f171b5a495612615dbd7"
     },
     {
       "path": "config/eazo-sdk-browser-shims.ts",

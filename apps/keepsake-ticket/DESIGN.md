@@ -14,10 +14,12 @@ A quiet instrumental travel-diary bed with restrained paper tap, rubber stamp, p
 
 ## Current remediation gaps
 
-- Implementation and Owner final-aesthetic review are pending.
+- Preview v1 implements the flat photography/paper/ink direction with coral and sea-blue accents.
+- Ticket scale, typography, illustration balance, and overall cuteness await Owner visual review.
+- Full interaction motion and sound remain intentionally unbuilt until that review.
 
 ## Owner approval
 
-- Direction: pending
+- Direction: preview v1 submitted, pending decision
 - Final aesthetics: pending
 - Evidence/Git SHA: pending

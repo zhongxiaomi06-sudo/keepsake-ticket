@@ -6,7 +6,7 @@ Turn one real travel or everyday photo into a personal illustrated ticket throug
 - Port: `5111`
 - Product language: `en-US`
 - Primary target: latest formal iPhone/iOS
-- State: `READY_TO_BUILD`
+- State: `BUILDING` — first visual preview, awaiting Owner review
 
 ## Run
 

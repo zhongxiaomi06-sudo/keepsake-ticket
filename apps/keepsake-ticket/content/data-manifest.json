@@ -1,0 +1,31 @@
+{
+  "manifestVersion": 1,
+  "appId": "keepsake-ticket",
+  "buildVersion": "0.1.0-building",
+  "contentVersion": "preview.1",
+  "schemaVersions": {
+    "rightsLedger": 1
+  },
+  "createdAt": "2026-09-07T20:30:00+08:00",
+  "rollbackBuildVersion": "0.1.0-scaffold",
+  "files": [
+    {
+      "path": "sample-journey.png",
+      "sha256": "5baa9b8bff3d0fbf29489f825e1128a6be8f2a9b1d5e9858c33ba5596cd41925",
+      "licenseId": "OPENAI-GENERATED-ORIGINAL",
+      "sourceIds": ["imagegen-photo-2026-09-07"]
+    },
+    {
+      "path": "sample-ticket-art.png",
+      "sha256": "14ad8dd96ade9f37e2547e2db513a528700384eb1b485fc2f7b3f57be860c690",
+      "licenseId": "OPENAI-GENERATED-ORIGINAL",
+      "sourceIds": ["imagegen-illustration-2026-09-07"]
+    }
+  ],
+  "datasets": [],
+  "totalBytes": 5766958,
+  "blocked": [
+    "Preview imagery awaits Owner visual approval.",
+    "The final user-photo illustration pipeline is not implemented in this preview slice."
+  ]
+}
