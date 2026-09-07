@@ -1,1 +1,82 @@
-<!doctype html><html lang="en-US" translate="no"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Keepsake Ticket</title><link rel="stylesheet" href="/src/styles.css"></head><body><main><button data-action="sound" aria-label="Mute soundtrack" aria-pressed="false">Sound on</button><h1>Keepsake Ticket</h1><p>Turn one real travel or everyday photo into a personal illustrated ticket through three tactile gestures.</p><button data-action="start">Start</button><button data-action="interact" hidden>Mark one memory point, stamp the date, then tear the ticket stub</button><div role="status" hidden><strong>Reveal a clean 3:4 original-photo and keepsake-ticket composition ready to keep</strong><button data-action="restart">Restart</button></div></main><script type="module" src="/src/main.js"></script></body></html>
+<!doctype html>
+<html lang="en-US" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#f3eee4" />
+    <meta name="description" content="Turn one photograph into a tactile travel keepsake ticket." />
+    <title>Keepsake Ticket</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="wordmark" aria-label="Keepsake Ticket">
+          <span class="wordmark-mark" aria-hidden="true">KT</span>
+          <span>Keepsake Ticket</span>
+        </div>
+        <button class="sound-toggle" type="button" data-action="sound" aria-pressed="false" aria-label="Mute soundtrack">
+          <span aria-hidden="true">♪</span><span data-sound-label>Sound on</span>
+        </button>
+      </header>
+
+      <section class="workspace" aria-labelledby="workspace-title">
+        <div class="workspace-heading">
+          <p class="eyebrow">ONE PHOTO · ONE MEMORY</p>
+          <h1 id="workspace-title">Keep the feeling,<br /><em>not just the frame.</em></h1>
+        </div>
+
+        <div class="keepsake" aria-label="Sample photo and travel ticket composition">
+          <figure class="photo-panel">
+            <img data-photo src="/content/sample-journey.png" alt="A cream bicycle with a coral tote beside a blue coastal path" />
+            <figcaption>YOUR ORIGINAL</figcaption>
+            <span class="memory-pin" aria-hidden="true"><i></i></span>
+          </figure>
+
+          <section class="ticket-stage" aria-label="Ticket reinterpretation">
+            <article class="ticket">
+              <div class="ticket-main">
+                <div class="ticket-copy">
+                  <p class="ticket-kicker">A SMALL TRIP · A BIG MEMORY</p>
+                  <h2>COASTAL<br />DAY</h2>
+                  <p class="ticket-note">Take the slow road,<br />find the world.</p>
+                </div>
+                <div class="ticket-illustration">
+                  <img src="/content/sample-ticket-art.png" alt="Watercolor illustration of the bicycle and coast" />
+                </div>
+                <div class="ticket-foot">
+                  <div class="swatches" aria-label="Colors sampled from the photograph">
+                    <span style="--swatch:#5d96b5"></span>
+                    <span style="--swatch:#e56e58"></span>
+                    <span style="--swatch:#e7d7ad"></span>
+                    <span style="--swatch:#8f8158"></span>
+                  </div>
+                  <span>36.2° N · SEA ROAD</span>
+                </div>
+              </div>
+              <aside class="ticket-stub" aria-label="Attached ticket stub">
+                <span class="stub-code">KT—071</span>
+                <span class="stub-route">SLOW<br />ROUTE</span>
+                <span class="stub-date">07 · SEP</span>
+              </aside>
+            </article>
+          </section>
+        </div>
+
+        <div class="start-control">
+          <label class="choose-button" for="photo-input">
+            <span>Choose a photo</span><span aria-hidden="true">↗</span>
+          </label>
+          <input id="photo-input" data-photo-input type="file" accept="image/jpeg,image/png,image/webp" />
+          <p class="privacy-note" data-note>Your photo stays on this device.</p>
+        </div>
+      </section>
+
+      <footer class="preview-status">
+        <span>VISUAL PREVIEW</span>
+        <span aria-hidden="true">01 / 01</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

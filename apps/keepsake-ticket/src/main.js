@@ -1,1 +1,45 @@
-const start=document.querySelector('[data-action="start"]'),interact=document.querySelector('[data-action="interact"]'),status=document.querySelector('[role="status"]'),restart=document.querySelector('[data-action="restart"]'),sound=document.querySelector('[data-action="sound"]');let audio,bed,bedGain,muted=localStorage.getItem('keepsake-ticket.muted')==='yes';const renderSound=()=>{sound.textContent=muted?'Sound off':'Sound on';sound.setAttribute('aria-pressed',String(muted));sound.setAttribute('aria-label',muted?'Turn on soundtrack':'Mute soundtrack');if(bedGain)bedGain.gain.value=muted?0:.012};const unlock=async()=>{const Context=globalThis.AudioContext||globalThis.webkitAudioContext;if(!Context)return;audio??=new Context();await audio.resume().catch(()=>{});if(!bed){bed=audio.createOscillator();bedGain=audio.createGain();bed.type='sine';bed.frequency.value=110;bed.connect(bedGain).connect(audio.destination);bed.start();renderSound()}};renderSound();start.addEventListener('click',async()=>{await unlock();start.hidden=true;interact.hidden=false});interact.addEventListener('click',()=>{interact.hidden=true;status.hidden=false});restart.addEventListener('click',()=>{status.hidden=true;start.hidden=false});sound.addEventListener('click',async()=>{await unlock();muted=!muted;localStorage.setItem('keepsake-ticket.muted',muted?'yes':'no');renderSound()});
+const input = document.querySelector('[data-photo-input]');
+const photo = document.querySelector('[data-photo]');
+const note = document.querySelector('[data-note]');
+const soundButton = document.querySelector('[data-action="sound"]');
+const soundLabel = document.querySelector('[data-sound-label]');
+
+let activeUrl = null;
+let muted = localStorage.getItem('keepsake-ticket.muted') === 'yes';
+
+function renderSound() {
+  soundButton.setAttribute('aria-pressed', String(muted));
+  soundButton.setAttribute('aria-label', muted ? 'Turn on soundtrack' : 'Mute soundtrack');
+  soundLabel.textContent = muted ? 'Sound off' : 'Sound on';
+}
+
+function replacePhoto(file) {
+  if (activeUrl) URL.revokeObjectURL(activeUrl);
+  activeUrl = URL.createObjectURL(file);
+  photo.src = activeUrl;
+  photo.alt = 'Your selected photograph';
+  note.textContent = 'Your photo is local. Ticket artwork is a visual sample.';
+}
+
+input.addEventListener('change', () => {
+  const file = input.files?.[0];
+  if (!file) return;
+  if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) {
+    note.textContent = 'Choose a JPEG, PNG, or WebP image.';
+    input.value = '';
+    return;
+  }
+  replacePhoto(file);
+});
+
+soundButton.addEventListener('click', () => {
+  muted = !muted;
+  localStorage.setItem('keepsake-ticket.muted', muted ? 'yes' : 'no');
+  renderSound();
+});
+
+window.addEventListener('pagehide', () => {
+  if (activeUrl) URL.revokeObjectURL(activeUrl);
+});
+
+renderSound();

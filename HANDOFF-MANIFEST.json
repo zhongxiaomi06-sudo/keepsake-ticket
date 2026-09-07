@@ -8,19 +8,14 @@
   "generatedAt": "2026-09-04T00:00:00.000Z",
   "files": [
     {
+      "path": ".gitignore",
+      "bytes": 106,
+      "sha256": "820a5ce0827a1c8be684fc346b46809d515bfc1df49f19bc5ed4524583b2e22c"
+    },
+    {
       "path": "apps/keepsake-ticket/ARCHITECTURE.md",
       "bytes": 570,
       "sha256": "4d2c330ffde0b5b8b5b7a0faa16eeb3070555741180c45bcf31bc17ee73266d2"
-    },
-    {
-      "path": "apps/keepsake-ticket/content/data-manifest.json",
-      "bytes": 388,
-      "sha256": "edfa5897cbab427042038c097864b034f13e23467687f9330bc1d6f947778473"
-    },
-    {
-      "path": "apps/keepsake-ticket/content/rights-ledger.tsv",
-      "bytes": 79,
-      "sha256": "a00a698e0579d19fde7e60d2c571c247182d13f948d4d1cedc61b05db780c8bf"
     },
     {
       "path": "apps/keepsake-ticket/content/sample-journey.png",
@@ -44,8 +39,8 @@
     },
     {
       "path": "apps/keepsake-ticket/index.html",
-      "bytes": 888,
-      "sha256": "6adeaea181849589b36ba126e9cca91c1aef289191f66d574b249cfea1f2b7af"
+      "bytes": 3668,
+      "sha256": "2a376cb73c0a715ef31f35a15aa508d476889023e6f0ab71e4ca34092a3f6a4c"
     },
     {
       "path": "apps/keepsake-ticket/package.json",
@@ -69,13 +64,13 @@
     },
     {
       "path": "apps/keepsake-ticket/src/main.js",
-      "bytes": 1374,
-      "sha256": "b6e7ae310c05534f456d161d10ba2c6770ee921fec450cf6439611e0d7d7ee68"
+      "bytes": 1466,
+      "sha256": "968672787efa4c4b9301d2ba5dd0d0892f88aee2a4d54ebcfd3ca118c716cbf2"
     },
     {
       "path": "apps/keepsake-ticket/src/styles.css",
-      "bytes": 432,
-      "sha256": "6de0a972d0d0399f3eda92f171c0e7546cde8f89e4a99ba97e1cd9a71f7e45e4"
+      "bytes": 7891,
+      "sha256": "aba49df6479ca296c1601ca3c369c4307074c006414343df6a9f70c1280aaa05"
     },
     {
       "path": "apps/keepsake-ticket/TESTING.md",
