@@ -1,0 +1,17 @@
+{
+  "manifestVersion": 1,
+  "appId": "keepsake-ticket",
+  "buildVersion": "0.1.0-building",
+  "contentVersion": "pending.1",
+  "schemaVersions": {
+    "rightsLedger": 1
+  },
+  "createdAt": "2026-09-07T12:01:11.605Z",
+  "rollbackBuildVersion": "0.0.0-empty",
+  "files": [],
+  "datasets": [],
+  "totalBytes": 0,
+  "blocked": [
+    "Content acquisition and rights review are pending."
+  ]
+}

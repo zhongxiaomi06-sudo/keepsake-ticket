@@ -1,0 +1,2 @@
+import { expect, test } from '@playwright/test';
+test('completes and restarts the Keepsake Ticket loop',async({page})=>{await page.goto('/');await page.getByRole('button',{name:'Start'}).click();await page.getByRole('button',{name:"Mark one memory point, stamp the date, then tear the ticket stub"}).click();await expect(page.getByRole('status')).toContainText("Reveal a clean 3:4 original-photo and keepsake-ticket composition ready to keep");await page.getByRole('button',{name:'Restart'}).click();await expect(page.getByRole('button',{name:'Start'})).toBeVisible()});

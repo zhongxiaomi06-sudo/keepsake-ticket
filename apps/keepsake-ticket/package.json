@@ -1,0 +1,13 @@
+{
+  "name": "@eazo/keepsake-ticket",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5111",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "catalog:"
+  }
+}

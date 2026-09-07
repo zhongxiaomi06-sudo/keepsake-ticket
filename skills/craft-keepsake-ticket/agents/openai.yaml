@@ -1,0 +1,4 @@
+interface:
+  display_name: "Craft Keepsake Ticket"
+  short_description: "Create and review the Eazo photo-to-ticket keepsake flow whi"
+  default_prompt: "Shape one uploaded photograph into a restrained 3:4 photo-and-ticket keepsake, then evaluate the memory-point, stamp, tear, and reveal sequence without introducing 3D."
